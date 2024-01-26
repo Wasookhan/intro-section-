@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+height: 100%;
+width: 100%;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    /* background-color: bisque; */
+
+}
+header .nav-items{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.logo {
+   cursor: pointer;
+   margin-right: 30px;
+   margin-top: 10px;
+    /* max-width: 100%; */
+}
+.nav{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 10px;
+    
+    /* border: 1px solid blue; */
+   
+}
+.nav-link{
+    font-size: 1rem;
+    opacity: 0.8;
+    /* border: 1px solid rgb(208, 0, 255); */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-link:hover{
+    opacity: 1;
+}
+.nav-link img{
+  margin-left: 3px;
+}
+
+.btns{
+
+}
+.sub-menus{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: -20px;
+    position: absolute;
+    z-index: 2;
+
+
+}
+ul{
+    width: 150px;
+    box-shadow: 0px 0px  1px rgb(41, 40, 40);
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-left: 102px;
+    display: none;
+   
+  
+}
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+    
+}
+li span{
+    opacity: 0.8;
+}
+li span:hover{
+    opacity: 1;
+}
+#company-li{
+    text-align: center;
+   width: 100px;
+   padding: 10px;
+   font-size: 13px;
+    margin-left: -1px;
+    margin-top: -30px;
+     position: absolute;
+     left: 270px;
+     top: 30px;
+     display: none;
+    
+}
+#company-li li{
+    opacity: 0.8;
+}
+#company-li li:hover{
+    opacity: 1;
+}
+button:nth-child(1){
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+button:nth-child(2){
+    padding: 5px 12px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.861);
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:nth-child(2):hover{
+    background-color: rgba(0, 0, 0, 0.916);
+    color: white;
+    transition: all 0.2s  ease-in;
+    cursor: pointer;
+}
+/* hero css */
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 40px 40px 120px ;
+    position:relative;
+}
+.left{
+    width: 60%;
+    max-width: 500px;
+}
+.right img{
+    /* width: 100%; */
+    width: 70%;
+    object-fit: contain;
+}
+.right{
+    width: 40%;
+}
+.left .heading{
+    line-height: 50px;
+    font-weight: bolder;
+    font-size: 55px;
+    width: 100%;
+    margin-bottom: 35px;
+
+}
+.left p{
+    width: 80%;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+.left button{
+    border: none;
+    padding: 10px 17px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.left button:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: black;
+}
+.left .logos{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+}
+.logos img{
+    
+}
+
+
+@media(min-width:800px){
+    .btns img{
+        display: none;
+    }
+}
+
+@media (max-width:800px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        padding:0px;
+        
+    }
+    .left{
+        width: 100%;
+        padding-left: 40px;
+        padding-top: 30px;
+        text-align:center;
+        
+    }
+    .left .heading{
+        font-size:40px;
+        margin-bottom: 20px;
+    }
+    
+    .right img{
+        width: 100%;
+    }
+    .right{
+        width:50%;
+        max-width: 100%;  
+    }
+    .nav-items .nav-link{
+        display: none;
+    }
+    button{
+        display: none;
+    }
+    
+   .sub-menus{
+    display: none;
+   }
+}
